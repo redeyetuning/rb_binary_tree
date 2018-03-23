@@ -1,6 +1,7 @@
 class Node
 	@@nodes = 0
 	
+	# Helper function to show how many instances of the Node class.
 	def self.nodes
 		@@nodes
 	end
@@ -48,7 +49,6 @@ class BinaryTree
 			queue.unshift(current.left) if current.left
 			queue.unshift(current.right) if current.right
 		end
-
 	end
 
 	# Runs a depth first search for value an array acting as a stack.
